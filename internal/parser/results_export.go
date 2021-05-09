@@ -2,6 +2,7 @@ package parser
 
 import (
 	"fmt"
+	"sort"
 
 	common "github.com/markus-wa/demoinfocs-golang/v2/pkg/demoinfocs/common"
 )
@@ -23,7 +24,7 @@ func (p *DemoParser) ProcessResults() {
 		fmt.Printf("Scoreboard: %d-%d %s\n", teamwins, enemywins, result)
 	}
 	fmt.Print("Team Members:")
-	fmt.Println(members)
+	fmt.Println(sort.StringSlice(members[:]))
 	fmt.Println("---------------------")
 }
 
