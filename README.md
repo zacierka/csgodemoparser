@@ -27,3 +27,6 @@ LouieR3 <br>
 zacierka <br>
 
 Closed Project
+#### Useful Links
+[This Project](https://github.com/zacierka/csgodemoparser)
+[Megaclan](https://github.com/megaclan3000/megaclan3000) - Code Inspiration
