@@ -1,11 +1,9 @@
 package parser
 
 import (
-	"fmt"
 	"os"
 
 	dem "github.com/markus-wa/demoinfocs-golang/v2/pkg/demoinfocs"
-	events "github.com/markus-wa/demoinfocs-golang/v2/pkg/demoinfocs/events"
 )
 
 func ParseDemo(path string) {
@@ -18,18 +16,9 @@ func ParseDemo(path string) {
 	p := dem.NewParser(f)
 	defer p.Close()
 
-	// Register handler on kill events
-	p.RegisterEventHandler(func(e events.Kill) {
-		var hs string
-		if e.IsHeadshot {
-			hs = " (HS)"
-		}
-		var wallBang string
-		if e.PenetratedObjects > 0 {
-			wallBang = " (WB)"
-		}
-		fmt.Printf("%s <%v%s%s> %s\n", e.Killer, e.Weapon, hs, wallBang, e.Victim)
-	})
+	// Register Events
+	p.RegisterEventHandler(HandlePlayerConnect)
+	// p.RegisterEventHandler(HandleKill)
 
 	// Parse to end
 	err = p.ParseToEnd()
