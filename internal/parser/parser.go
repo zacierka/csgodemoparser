@@ -2,7 +2,6 @@ package parser
 
 import (
 	"errors"
-	"fmt"
 	"log"
 	"os"
 	"strconv"
@@ -154,31 +153,4 @@ func (p *DemoParser) AddPlayer(player *common.Player) *Player {
 	teams[teamID].Players = append(teamPlayers, customPlayer)
 	p.Match.Players = append(p.Match.Players, customPlayer)
 	return customPlayer
-}
-
-// Team 2T 3CT
-func (p *DemoParser) isEBCWin() bool {
-	var team common.Team = common.Team(1)
-	for _, pl := range p.Match.Players {
-		fmt.Printf("Player %d is on %s\n", pl.SteamID, pl.Team.State.ClanName())
-		if _, found := TEAMMAP[pl.SteamID]; found {
-			team = pl.Team.State.Team()
-			break
-		}
-	}
-
-	var roundwins int = 0
-	for _, rnds := range p.Match.Rounds {
-		if team == rnds.Winner.State.Team() {
-			roundwins++
-		}
-	}
-
-	if roundwins == 16 {
-		return true
-	} else if roundwins < 16 {
-		return false
-	} else {
-		return true
-	}
 }

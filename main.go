@@ -23,5 +23,5 @@ func main() {
 	log.Println("\tFinished Parsing:", path)
 
 	log.Printf("\tProcessing Results for game ID: %s", parser.Match.ID)
-	parser.Match.ProcessResults()
+	parser.ProcessResults()
 }
