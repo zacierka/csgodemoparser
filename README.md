@@ -28,5 +28,5 @@ zacierka <br>
 
 Closed Project
 #### Useful Links
-[This Project](https://github.com/zacierka/csgodemoparser)
+[This Project](https://github.com/zacierka/csgodemoparser) <br>
 [Megaclan](https://github.com/megaclan3000/megaclan3000) - Code Inspiration
