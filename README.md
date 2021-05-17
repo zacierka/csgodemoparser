@@ -2,7 +2,7 @@
 csgo demo parser for game analysis
 
 ### Dependencies
-[demoinfocs](https://github.com/markus-wa/demoinfocs-golang) - parse .dem files
+[demoinfocs](https://github.com/markus-wa/demoinfocs-golang) - parse .dem files <br>
 [gorm.io](https://gorm.io) - Go ORM
 
 ## Getting Started
