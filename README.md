@@ -3,6 +3,7 @@ csgo demo parser for game analysis
 
 ### Dependencies
 [demoinfocs](https://github.com/markus-wa/demoinfocs-golang) - parse .dem files
+[gorm.io](https://gorm.io) - Go ORM
 
 ## Getting Started
 1. Install [golang](https://golang.org/). This is the language we are using to develop code.
