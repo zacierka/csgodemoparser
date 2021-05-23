@@ -1,0 +1,9 @@
+[Unit]
+Description=Ebotclique Discord Bot
+After=multi-user.target
+[Service]
+ExecStartPre=/bin/sleep 30
+ExecStart=/home/pi/Documents/bot/ebotclique
+
+[Install]
+WantedBy=multi-user.target
