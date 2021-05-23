@@ -24,10 +24,8 @@ C:\Users\\\<USERNAME\>\go
 3. Check [Releases](https://github.com/zacierka/csgodemoparser/releases) for working builds.
 
 ### Contributors
-LouieR3 <br>
 zacierka <br>
 
-Closed Project
 #### Useful Links
 [This Project](https://github.com/zacierka/csgodemoparser) <br>
 [Megaclan](https://github.com/megaclan3000/megaclan3000) - Code Inspiration
