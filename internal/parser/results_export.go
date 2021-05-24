@@ -38,7 +38,7 @@ func (p *DemoParser) ProcessResults() {
 		ScoreT:      teamwins,
 		ScoreE:      enemywins,
 		Result:      res, // loss
-		Playerone:   normalizePlayer(p.Match.Players[1].SteamID),
+		Playerone:   normalizePlayer(p.Match.Players[1].SteamID), // TODO: find our team
 		Playertwo:   normalizePlayer(p.Match.Players[1].SteamID),
 		Playerthree: normalizePlayer(p.Match.Players[1].SteamID),
 		Playerfour:  normalizePlayer(p.Match.Players[1].SteamID),
