@@ -1,5 +1,5 @@
 [Unit]
-Description=Ebotclique Discord Bot
+Description=csgo demo parser service
 After=multi-user.target
 [Service]
 ExecStartPre=/bin/sleep 30
